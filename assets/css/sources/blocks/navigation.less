@@ -1,0 +1,61 @@
+.navigation {
+  position: fixed;
+  left: 4rem;
+  top: 23rem;
+  padding: 0;
+  margin: 0;
+  @media screen and (max-width: 1200px) {
+    top: 21rem;
+  }
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0 45% 0;
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: 4rem 2rem;
+    text-decoration: none;
+    color: #ffffff;
+    @media screen and (max-width: 1200px) {
+      padding: 3rem 2rem;
+    }
+    &:hover {
+      color: @gold;
+    }
+    &--active {
+      color: @gold;
+    }
+  }
+
+  &__control {
+    position: relative;
+    padding-left: 2.3rem;
+  }
+
+  &__circle {
+    position: absolute;
+    z-index: 1;
+  }
+
+  &__dot {
+    position: absolute;
+    top: 0;
+    left: 3rem;
+    z-index: 2;
+  }
+
+  &__arrow {
+    padding-left: 0.4rem;
+    position: absolute;
+    top: 3rem;
+  }
+}

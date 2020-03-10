@@ -1,0 +1,46 @@
+.menu {
+  width: 60%;
+  transition: width 1s ease-out;
+  position: static;
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: -100%;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid @gold;
+    }
+  }
+
+  &__link{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    @media screen and (max-width: 1200px) {
+      font-size: 1.4rem;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 1.2rem;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+    }
+  }
+}
+

@@ -1,0 +1,276 @@
+.second_screen {
+  padding-top: 4%;
+  padding-left: 21%;
+  @media screen and (max-width: 768px) {
+    padding-left: 13%;
+  }
+  @media screen and (max-width: 375px) {
+    padding-left: 4%;
+  }
+
+  &__title {
+    color: @black;
+    padding-right: 65%;
+    line-height: 4.5rem;
+    letter-spacing: 0.01em;
+    width: 100%;
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 1%;
+    @media screen and (max-width: 1200px) {
+      font-size: 1.6rem;
+    }
+    @media screen and (max-width: 992px) {
+      padding-right: 53%;
+      line-height: 2.5rem;
+    }
+    @media screen and (max-width:576px) {
+      padding-right: 30%;
+    }
+    @media screen and (max-width: 375px) {
+      padding-right: 0;
+      font-size: 1.2rem;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 47px;
+      background-color: @gold;
+      left: -4%;
+      top: 16%;
+      @media screen and (max-width: 1200px) {
+        left: -7%;
+      }
+      @media screen and (max-width: 768px) {
+        left: -10%;
+      }
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
+    }
+  }
+
+  &__group {
+    position: relative;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+      position: static;
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 375px) {
+      position: static;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    width: 30%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+    padding-top: 3%;
+    @media screen and (max-width: 1600px) {
+      padding-top: 2%;
+      width: 32%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 28%;
+      padding-left: 0%;
+    }
+    @media screen and (max-width: 576px) {
+      width: 34%;
+      padding-left: 0;
+      top: -6%;
+      left: -6%;
+    }
+    @media screen and (max-width: 480px) {
+      position: static;
+      width: 100%;
+    }
+    @media screen and (max-width: 375px) {
+      position: static;
+      width: 100%;
+    }
+    &-number {
+      font-family: "Kazman sans";
+      width: 35%;
+      font-size: 8rem;
+      text-transform: uppercase;
+      color: @black;
+      @media screen and (max-width: 1200px) {
+        font-size: 6rem;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 480px) {
+        position: static;
+        width: 40%;
+        text-align: center;
+      }
+      @media screen and (max-width: 375px) {
+        position: static;
+        width: 40%;
+        text-align: center;
+      }
+
+      & > p {
+        padding: 0;
+        margin: 0;
+      }
+    }
+    &-words {
+      width: 50%;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      padding-right: 2%;
+      @media screen and (max-width: 1200px) {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+      @media screen and (max-width: 768px) {
+        width: 61%;
+      }
+      @media screen and (max-width: 480px) {
+        position: static;
+        width: 60%;
+        font-size: 1.2rem;
+        padding-right: 15%;
+      }
+      @media screen and (max-width: 375px) {
+        position: static;
+        width: 60%;
+        font-size: 1.2rem;
+        padding-right: 15%;
+      }
+    }
+  }
+
+  &__slice_mix {
+    position: absolute;
+    width: 55%;
+    z-index: 2;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__picture {
+    width: 100%;
+  }
+
+  &__crumbs {
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    left: -2%;
+    top: -8%;
+    padding: 0;
+    margin: 0;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+    @media screen and (max-width: 375px) {
+      display: none;
+    }
+  }
+
+  &__advantages {
+    display: flex;
+    flex-direction: column;
+    &-img {
+      padding-top: 2rem;
+      padding-right: 2rem;
+      & > svg {
+        @media screen and (max-width: 768px) {
+          height: 3rem;
+        }
+      }
+    }
+    &-text {
+      font-size: 1.4rem;
+      color: @black;
+      @media screen and (max-width: 992px) {
+        font-size: 1rem;
+      }
+      & > h3 {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+    &-item {
+      width: 100%;
+      display: flex;
+      height: 10rem;
+      padding-bottom: 16%;
+      &:nth-child(1) {
+        padding-left: 60%;
+        padding-right: 20%;
+        @media screen and (max-width: 768px) {
+          padding-right: 3%;
+        }
+        @media screen and (max-width: 576px) {
+          padding-left: 57%;
+        }
+        @media screen and (max-width: 480px) {
+          padding-left: 0%;
+        }
+        @media screen and (max-width: 375px) {
+          padding-left: 0%;
+        }
+      }
+      &:nth-child(2) {
+        padding-left: 50%;
+        padding-right: 23%;
+        @media screen and (max-width: 992px) {
+          padding-right: 10%;
+        }
+        @media screen and (max-width: 768px) {
+          padding-right: 2%;
+        }
+        @media screen and (max-width: 480px) {
+          padding-left: 0%;
+        }
+        @media screen and (max-width: 375px) {
+          padding-left: 0%;
+        }
+      }
+      &:nth-child(3) {
+        padding-left: 32%;
+        padding-right: 40%;
+        @media screen and (max-width: 992px) {
+          padding-right: 28%;
+        }
+        @media screen and (max-width: 768px) {
+          padding-right: 22%;
+        }
+        @media screen and (max-width: 480px) {
+          padding-left: 0%;
+        }
+        @media screen and (max-width: 375px) {
+          padding-left: 0%;
+        }
+      }
+    }
+  }
+}
